@@ -33,15 +33,23 @@ def zip_extract(x):
     if '.csv' not in contents.filename:
         raise ValueError("OS zip file does not contain csv")
     file_bytes = file_obj.open(contents).read()
-    return file_bytes.decode("utf-8")
+    return {"lines": file_bytes.decode("utf-8"), "filename": x.split("/")[-1]}
+
+# Note that this whole job is trivially parallelisable.  Each input zip file can be dealt with separately.
+def join_lines_file(x):
+    lines = x["lines"].split("\r\n")
+    return ['{},"{}"'.format(l, x["filename"]) for l in lines]
 
 def get_zip_data_from_s3(spark_context):
 
     file_list = get_file_list_from_bucket("alpha-everyone", "deleteathenaout/abpzips10/")
-    files_rdd = spark_context.parallelize(file_list, numSlices=100)  # As I understand it, if we set num slices >= num cpus in the cluster, we will parallelise across all cpus
+    
+    # As I understand it, if we set num slices >= num cpus in the cluster, we will parallelise across all cpus.  
+    files_rdd = spark_context.parallelize(file_list, numSlices=20)  
 
     files_data = files_rdd.map(zip_extract)
-    files_data = files_data.flatMap(lambda line: line.split("\r\n"))
+
+    files_data = files_data.flatMap(join_lines_file)
     files_data = files_data.map(lambda line: (line,))
 
     files_data = files_data.toDF(("line",))
