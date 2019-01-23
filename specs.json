@@ -1,0 +1,256 @@
+[
+    {
+      "table_name": "abp_blpu",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "LOGICAL_STATUS", "type": "int" },
+        { "name": "BLPU_STATE", "type": "int" },
+        { "name": "BLPU_STATE_DATE", "type": "date" },
+        { "name": "PARENT_UPRN", "type": "long" },
+        { "name": "X_COORDINATE", "type": "double" },
+        { "name": "Y_COORDINATE", "type": "double" },
+        { "name": "LATITUDE", "type": "double" },
+        { "name": "LONGITUDE", "type": "double" },
+        { "name": "RPC", "type": "int" },
+        { "name": "LOCAL_CUSTODIAN_CODE", "type": "int" },
+        { "name": "COUNTRY", "type": "character" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" },
+        { "name": "ADDRESSBASE_POSTAL", "type": "character" },
+        { "name": "POSTCODE_LOCATOR", "type": "character" },
+        { "name": "MULTI_OCC_COUNT", "type": "int" }
+      ]
+    },
+    {
+      "table_name": "abp_classification",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "CLASS_KEY", "type": "character" },
+        { "name": "CLASSIFICATION_CODE", "type": "character" },
+        { "name": "CLASS_SCHEME", "type": "character" },
+        { "name": "SCHEME_VERSION", "type": "double" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" }
+      ]
+    },
+    {
+      "table_name": "abp_crossref",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "XREF_KEY", "type": "character" },
+        { "name": "CROSS_REFERENCE", "type": "character" },
+        { "name": "VERSION", "type": "int" },
+        { "name": "SOURCE", "type": "character" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" }
+      ]
+    },
+    {
+      "table_name": "abp_delivery_point",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "UDPRN", "type": "long" },
+        { "name": "ORGANISATION_NAME", "type": "character" },
+        { "name": "DEPARTMENT_NAME", "type": "character" },
+        { "name": "SUB_BUILDING_NAME", "type": "character" },
+        { "name": "BUILDING_NAME", "type": "character" },
+        { "name": "BUILDING_NUMBER", "type": "int" },
+        { "name": "DEPENDENT_THOROUGHFARE", "type": "character" },
+        { "name": "THOROUGHFARE", "type": "character" },
+        { "name": "DOUBLE_DEPENDENT_LOCALITY", "type": "character" },
+        { "name": "DEPENDENT_LOCALITY", "type": "character" },
+        { "name": "POST_TOWN", "type": "character" },
+        { "name": "POSTCODE", "type": "character" },
+        { "name": "POSTCODE_TYPE", "type": "character" },
+        { "name": "DELIVERY_POINT_SUFFIX", "type": "character" },
+        { "name": "WELSH_DEPENDENT_THOROUGHFARE", "type": "character" },
+        { "name": "WELSH_THOROUGHFARE", "type": "character" },
+        { "name": "WELSH_DOUBLE_DEPENDENT_LOCALITY", "type": "character" },
+        { "name": "WELSH_DEPENDENT_LOCALITY", "type": "character" },
+        { "name": "WELSH_POST_TOWN", "type": "character" },
+        { "name": "PO_BOX_NUMBER", "type": "character" },
+        { "name": "PROCESS_DATE", "type": "date" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" }
+      ]
+    },
+    {
+      "table_name": "abp_lpi",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "LPI_KEY", "type": "character" },
+        { "name": "LANGUAGE", "type": "character" },
+        { "name": "LOGICAL_STATUS", "type": "int" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" },
+        { "name": "SAO_START_NUMBER", "type": "int" },
+        { "name": "SAO_START_SUFFIX", "type": "character" },
+        { "name": "SAO_END_NUMBER", "type": "int" },
+        { "name": "SAO_END_SUFFIX", "type": "character" },
+        { "name": "SAO_TEXT", "type": "character" },
+        { "name": "PAO_START_NUMBER", "type": "int" },
+        { "name": "PAO_START_SUFFIX", "type": "character" },
+        { "name": "PAO_END_NUMBER", "type": "int" },
+        { "name": "PAO_END_SUFFIX", "type": "character" },
+        { "name": "PAO_TEXT", "type": "character" },
+        { "name": "USRN", "type": "int" },
+        { "name": "USRN_MATCH_INDICATOR", "type": "character" },
+        { "name": "AREA_NAME", "type": "character" },
+        { "name": "LEVEL", "type": "character" },
+        { "name": "OFFICIAL_FLAG", "type": "character" }
+      ]
+    },
+    {
+      "table_name": "abp_organisation",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "ORG_KEY", "type": "character" },
+        { "name": "ORGANISATION", "type": "character" },
+        { "name": "LEGAL_NAME", "type": "character" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" }
+      ]
+    },
+    {
+      "table_name": "abp_street",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "USRN", "type": "int" },
+        { "name": "RECORD_TYPE", "type": "int" },
+        { "name": "SWA_ORG_REF_NAMING", "type": "int" },
+        { "name": "STATE", "type": "int" },
+        { "name": "STATE_DATE", "type": "date" },
+        { "name": "STREET_SURFACE", "type": "int" },
+        { "name": "STREET_CLASSIFICATION", "type": "int" },
+        { "name": "VERSION", "type": "int" },
+        { "name": "STREET_START_DATE", "type": "date" },
+        { "name": "STREET_END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "RECORD_ENTRY_DATE", "type": "date" },
+        { "name": "STREET_START_X", "type": "double" },
+        { "name": "STREET_START_Y", "type": "double" },
+        { "name": "STREET_START_LAT", "type": "double" },
+        { "name": "STREET_START_LONG", "type": "double" },
+        { "name": "STREET_END_X", "type": "double" },
+        { "name": "STREET_END_Y", "type": "double" },
+        { "name": "STREET_END_LAT", "type": "double" },
+        { "name": "STREET_END_LONG", "type": "double" },
+        { "name": "STREET_TOLERANCE", "type": "int" }
+      ]
+    },
+    {
+      "table_name": "abp_street_descriptor",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "USRN", "type": "int" },
+        { "name": "STREET_DESCRIPTION", "type": "character" },
+        { "name": "LOCALITY", "type": "character" },
+        { "name": "TOWN_NAME", "type": "character" },
+        { "name": "ADMINISTRATIVE_AREA", "type": "character" },
+        { "name": "LANGUAGE", "type": "character" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" }
+      ]
+    },
+    {
+      "table_name": "abp_successor",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CHANGE_TYPE", "type": "character" },
+        { "name": "PRO_ORDER", "type": "long" },
+        { "name": "UPRN", "type": "long" },
+        { "name": "SUCC_KEY", "type": "character" },
+        { "name": "START_DATE", "type": "date" },
+        { "name": "END_DATE", "type": "date" },
+        { "name": "LAST_UPDATE_DATE", "type": "date" },
+        { "name": "ENTRY_DATE", "type": "date" },
+        { "name": "SUCCESSOR", "type": "long" }
+      ]
+    },
+    {
+      "table_name": "abp_header",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "CUSTODIAN_NAME", "type": "character" },
+        { "name": "LOCAL_CUSTODIAN_NAME", "type": "character" },
+        { "name": "PROCESS_DATE", "type": "date" },
+        { "name": "VOLUME_NUMBER", "type": "int" },
+        { "name": "ENTRY_DATE", "type": "date" },
+        { "name": "TIME_STAMP", "type": "character" },
+        { "name": "VERSION", "type": "character" },
+        { "name": "FILE_TYPE", "type": "character" },
+        { "name": "filename", "type": "character" }
+      ]
+    },
+    {
+      "table_name": "abp_trailer",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "NEXT_VOLUME_NUMBER", "type": "int" },
+        { "name": "RECORD_COUNT", "type": "int" },
+        { "name": "ENTRY_DATE", "type": "date" },
+        { "name": "TIME_STAMP", "type": "character" },
+        { "name": "filename", "type": "character" }
+      ]
+    },
+    {
+      "table_name": "abp_metadata",
+      "spec": [
+        { "name": "RECORD_IDENTIFIER", "type": "int" },
+        { "name": "GAZ_NAME", "type": "character" },
+        { "name": "GAZ_SCOPE", "type": "character" },
+        { "name": "TER_OF_USE", "type": "character" },
+        { "name": "LINKED_DATA", "type": "character" },
+        { "name": "GAZ_OWNER", "type": "character" },
+        { "name": "NGAZ_FREQ", "type": "character" },
+        { "name": "CUSTODIAN_NAME", "type": "character" },
+        { "name": "CUSTODIAN_UPRN", "type": "long" },
+        { "name": "LOCAL_CUSTODIAN_CODE", "type": "int" },
+        { "name": "CO_ORD_SYSTEM", "type": "character" },
+        { "name": "CO_ORD_UNIT", "type": "character" },
+        { "name": "META_DATE", "type": "date" },
+        { "name": "CLASS_SCHEME", "type": "character" },
+        { "name": "GAZ_DATE", "type": "date" },
+        { "name": "LANGUAGE", "type": "character" },
+        { "name": "CHARACTER_SET", "type": "character" },
+        { "name": "filename", "type": "character" }
+      ]
+    }
+  ]
+  

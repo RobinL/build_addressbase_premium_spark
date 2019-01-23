@@ -22,7 +22,7 @@
         },
         {
             "name": "USRN",
-            "type": "INTEGER,",
+            "type": "int",
             "description": "USRN"
         },
         {
