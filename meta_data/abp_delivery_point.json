@@ -1,0 +1,159 @@
+{
+    "description": "abp_delivery_point",
+    "name": "abp_delivery_point",
+    "data_format": "parquet",
+    "location": "abp_delivery_point",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CHANGE_TYPE",
+            "type": "character",
+            "description": "CHANGE_TYPE"
+        },
+        {
+            "name": "PRO_ORDER",
+            "type": "long",
+            "description": "PRO_ORDER"
+        },
+        {
+            "name": "UPRN",
+            "type": "long",
+            "description": "UPRN"
+        },
+        {
+            "name": "UDPRN",
+            "type": "long",
+            "description": "UDPRN"
+        },
+        {
+            "name": "ORGANISATION_NAME",
+            "type": "character",
+            "description": "ORGANISATION_NAME"
+        },
+        {
+            "name": "DEPARTMENT_NAME",
+            "type": "character",
+            "description": "DEPARTMENT_NAME"
+        },
+        {
+            "name": "SUB_BUILDING_NAME",
+            "type": "character",
+            "description": "SUB_BUILDING_NAME"
+        },
+        {
+            "name": "BUILDING_NAME",
+            "type": "character",
+            "description": "BUILDING_NAME"
+        },
+        {
+            "name": "BUILDING_NUMBER",
+            "type": "int",
+            "description": "BUILDING_NUMBER"
+        },
+        {
+            "name": "DEPENDENT_THOROUGHFARE",
+            "type": "character",
+            "description": "DEPENDENT_THOROUGHFARE"
+        },
+        {
+            "name": "THOROUGHFARE",
+            "type": "character",
+            "description": "THOROUGHFARE"
+        },
+        {
+            "name": "DOUBLE_DEPENDENT_LOCALITY",
+            "type": "character",
+            "description": "DOUBLE_DEPENDENT_LOCALITY"
+        },
+        {
+            "name": "DEPENDENT_LOCALITY",
+            "type": "character",
+            "description": "DEPENDENT_LOCALITY"
+        },
+        {
+            "name": "POST_TOWN",
+            "type": "character",
+            "description": "POST_TOWN"
+        },
+        {
+            "name": "POSTCODE",
+            "type": "character",
+            "description": "POSTCODE"
+        },
+        {
+            "name": "POSTCODE_TYPE",
+            "type": "character",
+            "description": "POSTCODE_TYPE"
+        },
+        {
+            "name": "DELIVERY_POINT_SUFFIX",
+            "type": "character",
+            "description": "DELIVERY_POINT_SUFFIX"
+        },
+        {
+            "name": "WELSH_DEPENDENT_THOROUGHFARE",
+            "type": "character",
+            "description": "WELSH_DEPENDENT_THOROUGHFARE"
+        },
+        {
+            "name": "WELSH_THOROUGHFARE",
+            "type": "character",
+            "description": "WELSH_THOROUGHFARE"
+        },
+        {
+            "name": "WELSH_DOUBLE_DEPENDENT_LOCALITY",
+            "type": "character",
+            "description": "WELSH_DOUBLE_DEPENDENT_LOCALITY"
+        },
+        {
+            "name": "WELSH_DEPENDENT_LOCALITY",
+            "type": "character",
+            "description": "WELSH_DEPENDENT_LOCALITY"
+        },
+        {
+            "name": "WELSH_POST_TOWN",
+            "type": "character",
+            "description": "WELSH_POST_TOWN"
+        },
+        {
+            "name": "PO_BOX_NUMBER",
+            "type": "character",
+            "description": "PO_BOX_NUMBER"
+        },
+        {
+            "name": "PROCESS_DATE",
+            "type": "date",
+            "description": "PROCESS_DATE"
+        },
+        {
+            "name": "START_DATE",
+            "type": "date",
+            "description": "START_DATE"
+        },
+        {
+            "name": "END_DATE",
+            "type": "date",
+            "description": "END_DATE"
+        },
+        {
+            "name": "LAST_UPDATE_DATE",
+            "type": "date",
+            "description": "LAST_UPDATE_DATE"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

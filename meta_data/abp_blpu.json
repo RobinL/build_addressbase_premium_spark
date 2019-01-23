@@ -1,0 +1,124 @@
+{
+    "description": "abp_blpu",
+    "name": "abp_blpu",
+    "data_format": "parquet",
+    "location": "abp_blpu",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CHANGE_TYPE",
+            "type": "character",
+            "description": "CHANGE_TYPE"
+        },
+        {
+            "name": "PRO_ORDER",
+            "type": "long",
+            "description": "PRO_ORDER"
+        },
+        {
+            "name": "UPRN",
+            "type": "long",
+            "description": "UPRN"
+        },
+        {
+            "name": "LOGICAL_STATUS",
+            "type": "int",
+            "description": "LOGICAL_STATUS"
+        },
+        {
+            "name": "BLPU_STATE",
+            "type": "int",
+            "description": "BLPU_STATE"
+        },
+        {
+            "name": "BLPU_STATE_DATE",
+            "type": "date",
+            "description": "BLPU_STATE_DATE"
+        },
+        {
+            "name": "PARENT_UPRN",
+            "type": "long",
+            "description": "PARENT_UPRN"
+        },
+        {
+            "name": "X_COORDINATE",
+            "type": "double",
+            "description": "X_COORDINATE"
+        },
+        {
+            "name": "Y_COORDINATE",
+            "type": "double",
+            "description": "Y_COORDINATE"
+        },
+        {
+            "name": "LATITUDE",
+            "type": "double",
+            "description": "LATITUDE"
+        },
+        {
+            "name": "LONGITUDE",
+            "type": "double",
+            "description": "LONGITUDE"
+        },
+        {
+            "name": "RPC",
+            "type": "int",
+            "description": "RPC"
+        },
+        {
+            "name": "LOCAL_CUSTODIAN_CODE",
+            "type": "int",
+            "description": "LOCAL_CUSTODIAN_CODE"
+        },
+        {
+            "name": "COUNTRY",
+            "type": "character",
+            "description": "COUNTRY"
+        },
+        {
+            "name": "START_DATE",
+            "type": "date",
+            "description": "START_DATE"
+        },
+        {
+            "name": "END_DATE",
+            "type": "date",
+            "description": "END_DATE"
+        },
+        {
+            "name": "LAST_UPDATE_DATE",
+            "type": "date",
+            "description": "LAST_UPDATE_DATE"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "ADDRESSBASE_POSTAL",
+            "type": "character",
+            "description": "ADDRESSBASE_POSTAL"
+        },
+        {
+            "name": "POSTCODE_LOCATOR",
+            "type": "character",
+            "description": "POSTCODE_LOCATOR"
+        },
+        {
+            "name": "MULTI_OCC_COUNT",
+            "type": "int",
+            "description": "MULTI_OCC_COUNT"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

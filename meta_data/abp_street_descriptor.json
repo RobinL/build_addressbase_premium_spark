@@ -1,0 +1,79 @@
+{
+    "description": "abp_street_descriptor",
+    "name": "abp_street_descriptor",
+    "data_format": "parquet",
+    "location": "abp_street_descriptor",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CHANGE_TYPE",
+            "type": "character",
+            "description": "CHANGE_TYPE"
+        },
+        {
+            "name": "PRO_ORDER",
+            "type": "long",
+            "description": "PRO_ORDER"
+        },
+        {
+            "name": "USRN",
+            "type": "INTEGER,",
+            "description": "USRN"
+        },
+        {
+            "name": "STREET_DESCRIPTION",
+            "type": "character",
+            "description": "STREET_DESCRIPTION"
+        },
+        {
+            "name": "LOCALITY",
+            "type": "character",
+            "description": "LOCALITY"
+        },
+        {
+            "name": "TOWN_NAME",
+            "type": "character",
+            "description": "TOWN_NAME"
+        },
+        {
+            "name": "ADMINISTRATIVE_AREA",
+            "type": "character",
+            "description": "ADMINISTRATIVE_AREA"
+        },
+        {
+            "name": "LANGUAGE",
+            "type": "character",
+            "description": "LANGUAGE"
+        },
+        {
+            "name": "START_DATE",
+            "type": "date",
+            "description": "START_DATE"
+        },
+        {
+            "name": "END_DATE",
+            "type": "date",
+            "description": "END_DATE"
+        },
+        {
+            "name": "LAST_UPDATE_DATE",
+            "type": "date",
+            "description": "LAST_UPDATE_DATE"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

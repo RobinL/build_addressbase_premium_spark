@@ -1,0 +1,134 @@
+{
+    "description": "abp_street",
+    "name": "abp_street",
+    "data_format": "parquet",
+    "location": "abp_street",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CHANGE_TYPE",
+            "type": "character",
+            "description": "CHANGE_TYPE"
+        },
+        {
+            "name": "PRO_ORDER",
+            "type": "long",
+            "description": "PRO_ORDER"
+        },
+        {
+            "name": "USRN",
+            "type": "integer,",
+            "description": "USRN"
+        },
+        {
+            "name": "RECORD_TYPE",
+            "type": "int",
+            "description": "RECORD_TYPE"
+        },
+        {
+            "name": "SWA_ORG_REF_NAMING",
+            "type": "int",
+            "description": "SWA_ORG_REF_NAMING"
+        },
+        {
+            "name": "STATE",
+            "type": "int",
+            "description": "STATE"
+        },
+        {
+            "name": "STATE_DATE",
+            "type": "date",
+            "description": "STATE_DATE"
+        },
+        {
+            "name": "STREET_SURFACE",
+            "type": "int",
+            "description": "STREET_SURFACE"
+        },
+        {
+            "name": "STREET_CLASSIFICATION",
+            "type": "int",
+            "description": "STREET_CLASSIFICATION"
+        },
+        {
+            "name": "VERSION",
+            "type": "int",
+            "description": "VERSION"
+        },
+        {
+            "name": "STREET_START_DATE",
+            "type": "date",
+            "description": "STREET_START_DATE"
+        },
+        {
+            "name": "STREET_END_DATE",
+            "type": "date",
+            "description": "STREET_END_DATE"
+        },
+        {
+            "name": "LAST_UPDATE_DATE",
+            "type": "date",
+            "description": "LAST_UPDATE_DATE"
+        },
+        {
+            "name": "RECORD_ENTRY_DATE",
+            "type": "date",
+            "description": "RECORD_ENTRY_DATE"
+        },
+        {
+            "name": "STREET_START_X",
+            "type": "double",
+            "description": "STREET_START_X"
+        },
+        {
+            "name": "STREET_START_Y",
+            "type": "double",
+            "description": "STREET_START_Y"
+        },
+        {
+            "name": "STREET_START_LAT",
+            "type": "double",
+            "description": "STREET_START_LAT"
+        },
+        {
+            "name": "STREET_START_LONG",
+            "type": "double",
+            "description": "STREET_START_LONG"
+        },
+        {
+            "name": "STREET_END_X",
+            "type": "double",
+            "description": "STREET_END_X"
+        },
+        {
+            "name": "STREET_END_Y",
+            "type": "double",
+            "description": "STREET_END_Y"
+        },
+        {
+            "name": "STREET_END_LAT",
+            "type": "double",
+            "description": "STREET_END_LAT"
+        },
+        {
+            "name": "STREET_END_LONG",
+            "type": "double",
+            "description": "STREET_END_LONG"
+        },
+        {
+            "name": "STREET_TOLERANCE",
+            "type": "int",
+            "description": "STREET_TOLERANCE"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

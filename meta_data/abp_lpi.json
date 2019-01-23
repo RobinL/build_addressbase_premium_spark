@@ -1,0 +1,144 @@
+{
+    "description": "abp_lpi",
+    "name": "abp_lpi",
+    "data_format": "parquet",
+    "location": "abp_lpi",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CHANGE_TYPE",
+            "type": "character",
+            "description": "CHANGE_TYPE"
+        },
+        {
+            "name": "PRO_ORDER",
+            "type": "long",
+            "description": "PRO_ORDER"
+        },
+        {
+            "name": "UPRN",
+            "type": "long",
+            "description": "UPRN"
+        },
+        {
+            "name": "LPI_KEY",
+            "type": "character",
+            "description": "LPI_KEY"
+        },
+        {
+            "name": "LANGUAGE",
+            "type": "character",
+            "description": "LANGUAGE"
+        },
+        {
+            "name": "LOGICAL_STATUS",
+            "type": "int",
+            "description": "LOGICAL_STATUS"
+        },
+        {
+            "name": "START_DATE",
+            "type": "date",
+            "description": "START_DATE"
+        },
+        {
+            "name": "END_DATE",
+            "type": "date",
+            "description": "END_DATE"
+        },
+        {
+            "name": "LAST_UPDATE_DATE",
+            "type": "date",
+            "description": "LAST_UPDATE_DATE"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "SAO_START_NUMBER",
+            "type": "int",
+            "description": "SAO_START_NUMBER"
+        },
+        {
+            "name": "SAO_START_SUFFIX",
+            "type": "character",
+            "description": "SAO_START_SUFFIX"
+        },
+        {
+            "name": "SAO_END_NUMBER",
+            "type": "int",
+            "description": "SAO_END_NUMBER"
+        },
+        {
+            "name": "SAO_END_SUFFIX",
+            "type": "character",
+            "description": "SAO_END_SUFFIX"
+        },
+        {
+            "name": "SAO_TEXT",
+            "type": "character",
+            "description": "SAO_TEXT"
+        },
+        {
+            "name": "PAO_START_NUMBER",
+            "type": "int",
+            "description": "PAO_START_NUMBER"
+        },
+        {
+            "name": "PAO_START_SUFFIX",
+            "type": "character",
+            "description": "PAO_START_SUFFIX"
+        },
+        {
+            "name": "PAO_END_NUMBER",
+            "type": "int",
+            "description": "PAO_END_NUMBER"
+        },
+        {
+            "name": "PAO_END_SUFFIX",
+            "type": "character",
+            "description": "PAO_END_SUFFIX"
+        },
+        {
+            "name": "PAO_TEXT",
+            "type": "character",
+            "description": "PAO_TEXT"
+        },
+        {
+            "name": "USRN",
+            "type": "INTEGER,",
+            "description": "USRN"
+        },
+        {
+            "name": "USRN_MATCH_INDICATOR",
+            "type": "character",
+            "description": "USRN_MATCH_INDICATOR"
+        },
+        {
+            "name": "AREA_NAME",
+            "type": "character",
+            "description": "AREA_NAME"
+        },
+        {
+            "name": "LEVEL",
+            "type": "character",
+            "description": "LEVEL"
+        },
+        {
+            "name": "OFFICIAL_FLAG",
+            "type": "character",
+            "description": "OFFICIAL_FLAG"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

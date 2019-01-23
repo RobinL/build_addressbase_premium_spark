@@ -1,0 +1,44 @@
+{
+    "description": "abp_trailer",
+    "name": "abp_trailer",
+    "data_format": "parquet",
+    "location": "abp_trailer",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "NEXT_VOLUME_NUMBER",
+            "type": "int",
+            "description": "NEXT_VOLUME_NUMBER"
+        },
+        {
+            "name": "RECORD_COUNT",
+            "type": "int",
+            "description": "RECORD_COUNT"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "TIME_STAMP",
+            "type": "character",
+            "description": "TIME_STAMP"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

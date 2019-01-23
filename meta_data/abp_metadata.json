@@ -1,0 +1,104 @@
+{
+    "description": "abp_metadata",
+    "name": "abp_metadata",
+    "data_format": "parquet",
+    "location": "abp_metadata",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "GAZ_NAME",
+            "type": "character",
+            "description": "GAZ_NAME"
+        },
+        {
+            "name": "GAZ_SCOPE",
+            "type": "character",
+            "description": "GAZ_SCOPE"
+        },
+        {
+            "name": "TER_OF_USE",
+            "type": "character",
+            "description": "TER_OF_USE"
+        },
+        {
+            "name": "LINKED_DATA",
+            "type": "character",
+            "description": "LINKED_DATA"
+        },
+        {
+            "name": "GAZ_OWNER",
+            "type": "character",
+            "description": "GAZ_OWNER"
+        },
+        {
+            "name": "NGAZ_FREQ",
+            "type": "character",
+            "description": "NGAZ_FREQ"
+        },
+        {
+            "name": "CUSTODIAN_NAME",
+            "type": "character",
+            "description": "CUSTODIAN_NAME"
+        },
+        {
+            "name": "CUSTODIAN_UPRN",
+            "type": "long",
+            "description": "CUSTODIAN_UPRN"
+        },
+        {
+            "name": "LOCAL_CUSTODIAN_CODE",
+            "type": "int",
+            "description": "LOCAL_CUSTODIAN_CODE"
+        },
+        {
+            "name": "CO_ORD_SYSTEM",
+            "type": "character",
+            "description": "CO_ORD_SYSTEM"
+        },
+        {
+            "name": "CO_ORD_UNIT",
+            "type": "character",
+            "description": "CO_ORD_UNIT"
+        },
+        {
+            "name": "META_DATE",
+            "type": "date",
+            "description": "META_DATE"
+        },
+        {
+            "name": "CLASS_SCHEME",
+            "type": "character",
+            "description": "CLASS_SCHEME"
+        },
+        {
+            "name": "GAZ_DATE",
+            "type": "date",
+            "description": "GAZ_DATE"
+        },
+        {
+            "name": "LANGUAGE",
+            "type": "character",
+            "description": "LANGUAGE"
+        },
+        {
+            "name": "CHARACTER_SET",
+            "type": "character",
+            "description": "CHARACTER_SET"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

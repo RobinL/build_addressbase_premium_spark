@@ -1,0 +1,64 @@
+{
+    "description": "abp_header",
+    "name": "abp_header",
+    "data_format": "parquet",
+    "location": "abp_header",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CUSTODIAN_NAME",
+            "type": "character",
+            "description": "CUSTODIAN_NAME"
+        },
+        {
+            "name": "LOCAL_CUSTODIAN_NAME",
+            "type": "character",
+            "description": "LOCAL_CUSTODIAN_NAME"
+        },
+        {
+            "name": "PROCESS_DATE",
+            "type": "date",
+            "description": "PROCESS_DATE"
+        },
+        {
+            "name": "VOLUME_NUMBER",
+            "type": "int",
+            "description": "VOLUME_NUMBER"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "TIME_STAMP",
+            "type": "character",
+            "description": "TIME_STAMP"
+        },
+        {
+            "name": "VERSION",
+            "type": "character",
+            "description": "VERSION"
+        },
+        {
+            "name": "FILE_TYPE",
+            "type": "character",
+            "description": "FILE_TYPE"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

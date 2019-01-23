@@ -1,0 +1,64 @@
+{
+    "description": "abp_successor",
+    "name": "abp_successor",
+    "data_format": "parquet",
+    "location": "abp_successor",
+    "partitions": [],
+    "columns": [
+        {
+            "name": "RECORD_IDENTIFIER",
+            "type": "int",
+            "description": "RECORD_IDENTIFIER"
+        },
+        {
+            "name": "CHANGE_TYPE",
+            "type": "character",
+            "description": "CHANGE_TYPE"
+        },
+        {
+            "name": "PRO_ORDER",
+            "type": "long",
+            "description": "PRO_ORDER"
+        },
+        {
+            "name": "UPRN",
+            "type": "long",
+            "description": "UPRN"
+        },
+        {
+            "name": "SUCC_KEY",
+            "type": "character",
+            "description": "SUCC_KEY"
+        },
+        {
+            "name": "START_DATE",
+            "type": "date",
+            "description": "START_DATE"
+        },
+        {
+            "name": "END_DATE",
+            "type": "date",
+            "description": "END_DATE"
+        },
+        {
+            "name": "LAST_UPDATE_DATE",
+            "type": "date",
+            "description": "LAST_UPDATE_DATE"
+        },
+        {
+            "name": "ENTRY_DATE",
+            "type": "date",
+            "description": "ENTRY_DATE"
+        },
+        {
+            "name": "SUCCESSOR",
+            "type": "long",
+            "description": "SUCCESSOR"
+        },
+        {
+            "name": "filename",
+            "type": "character",
+            "description": "filename"
+        }
+    ]
+}

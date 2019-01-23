@@ -1,0 +1,6 @@
+{
+    "description": "A database containing various open datasets",
+    "name": "open_data",
+    "bucket": "alpha-mojap-curated-open-data",
+    "base_folder": ""
+}
