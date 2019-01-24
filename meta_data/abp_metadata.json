@@ -94,11 +94,6 @@
             "name": "filename",
             "type": "character",
             "description": "filename"
-        },
-        {
-            "name": "filename",
-            "type": "character",
-            "description": "filename"
         }
     ]
 }
