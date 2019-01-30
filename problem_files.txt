@@ -1,2 +1,4 @@
 deleteathenaout/abpzips_glue/NC9565.zip
 deleteathenaout/abpzips_glue/NG3050.zip
+
+24,"I",382,130170482,"9068L000172745","ENG",1,2014-06-24,,2017-05-07,2014-06-24,,"",,"","",1,"A",,"","EILEAN ÒIR",84415047,"1","","0","Y"
