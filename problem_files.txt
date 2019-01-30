@@ -1,0 +1,2 @@
+deleteathenaout/abpzips_glue/NC9565.zip
+deleteathenaout/abpzips_glue/NG3050.zip

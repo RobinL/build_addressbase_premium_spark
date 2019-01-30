@@ -9,7 +9,9 @@ from awsglue.job import Job
 
 from gluejobutils.s3 import read_json_from_s3
 
+from pyspark.sql import functions as fns
 from parallel_download import download_abp_zips
+from read_zips_from_s3 import get_zip_data_from_s3
 
 args = getResolvedOptions(sys.argv, ['JOB_NAME', 'test_arg'])
 
@@ -23,5 +25,24 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
+print "Starting to download data to s3"
 links = read_json_from_s3("s3://alpha-everyone/addressbase_premium/json/links.json")
 download_abp_zips(links, sc)
+print "Finished downloading data to s3"
+
+
+print "Starting to read data from s3 zips"
+raw_data = get_zip_data_from_s3(sc)
+
+split_col = fns.split(raw_data['line'], ',')
+raw_data = raw_data.withColumn('first_col', split_col.getItem(0))
+
+# Deal with possible errors - if first_col is not two characters, both digits, then remove
+conformant_data = raw_data.filter(raw_data["line"].rlike("^\d{2},"))
+
+# Count number of records of different types.
+# TODO:  I think the metadatatable contains expected recordcounts?
+conformant_data.createOrReplaceTempView("df")
+
+conformant_data.write.partitionBy("first_col").mode('overwrite').text("s3a://alpha-everyone/deleteathenaout/outtemp/")
+print "Complete writing out split csvs"
