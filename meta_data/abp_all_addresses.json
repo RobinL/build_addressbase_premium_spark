@@ -1,0 +1,23 @@
+{
+  "description": "abp_all_addresses",
+  "name": "abp_all_addresses",
+  "data_format": "parquet",
+  "location": "abp_all_addresses",
+  "partitions": [],
+  "columns": [
+    { "name": "uprn", "description": "Unique property reference number", "type": "long" },
+    { "name": "postcode", "description": "postcode", "type": "character" },
+    {
+      "name": "CLASSIFICATION_CODE",
+      "description": "CLASSIFICATION_CODE",
+      "type": "character"
+    },
+    { "name": "latitude", "description": "latitude", "type": "double" },
+    { "name": "longitude", "description": "longitude", "type": "double" },
+    {
+      "name": "full_address",
+      "description": "full_address",
+      "type": "character"
+    }
+  ]
+}

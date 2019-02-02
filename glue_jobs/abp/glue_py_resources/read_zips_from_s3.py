@@ -54,7 +54,7 @@ def get_zip_data_from_s3(spark_context):
     file_list = get_file_list_from_bucket("alpha-everyone", "deleteathenaout/abpzips_glue/")
 
     # As I understand it, if we set num slices >= num cpus in the cluster, we will parallelise across all cpus.
-    files_rdd = spark_context.parallelize(file_list, numSlices=20)
+    files_rdd = spark_context.parallelize(file_list, numSlices=100)
 
     files_data = files_rdd.map(zip_extract)
 
@@ -63,3 +63,5 @@ def get_zip_data_from_s3(spark_context):
 
     files_data = files_data.toDF(("line",))
     return files_data
+
+

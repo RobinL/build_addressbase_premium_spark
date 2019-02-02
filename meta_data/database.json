@@ -1,6 +1,6 @@
 {
-    "description": "A database containing various open datasets",
-    "name": "open_data",
-    "bucket": "alpha-mojap-curated-open-data",
-    "base_folder": ""
+    "description": "A database containing commerically-sensitive Ordnance Survey data (obtained under the Public Sector Mapping Agreement",
+    "name": "ordnance_survey",
+    "bucket": "alpha-everyone",
+    "base_folder": "deleteathenaout/abpparquet/"
 }

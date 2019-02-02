@@ -143,4 +143,4 @@ def create_all_addresses(spark):
     geog = geographic_addresses(spark)
     deliv = delivery_addresses(spark)
     all_addresses = geog.union(deliv)
-    all_addresses.write.parquet("s3a://alpha-everyone/deleteathenaout/abpparquet/all_addresses", mode="overwrite")
+    all_addresses.write.parquet("s3a://alpha-everyone/deleteathenaout/abpparquet/abp_all_addresses", mode="overwrite")
