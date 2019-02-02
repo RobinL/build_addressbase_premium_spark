@@ -11,6 +11,6 @@ from etl_manager.etl import GlueJob
 my_role = 'alpha_user_robinl'
 bucket = 'alpha-everyone'
 
-job = GlueJob('glue_jobs/abp', bucket=bucket, job_role=my_role, job_arguments={"--test_arg" : 'some_string'})
-job.allocated_capacity = 10
+job = GlueJob('glue_jobs/abp', bucket=bucket, job_role=my_role, job_arguments={"--test_arg" : 'some_string', '--enable-metrics': ''})
+job.allocated_capacity = 5
 job.run_job()
