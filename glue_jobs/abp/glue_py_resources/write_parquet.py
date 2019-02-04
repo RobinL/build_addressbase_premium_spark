@@ -2,6 +2,8 @@ import json
 from pyspark.sql.utils import AnalysisException
 from pyspark.sql.types import StructType
 
+from settings import CSV_BASE_FOLDER_S3A, PARQUET_BASE_FOLDER_S3A
+
 
 def convert_txt_to_parquet(spark):
 
@@ -19,7 +21,7 @@ def convert_txt_to_parquet(spark):
             jsonschema = json.load(f)
         schema = StructType.fromJson(jsonschema)
         try:
-            df =  spark.read.csv("s3a://alpha-everyone/deleteathenaout/outtemp/first_col={}".format(v["partition"]), schema=schema)
+            df =  spark.read.csv("{}/first_col={}".format(CSV_BASE_FOLDER_S3A, v["partition"]), schema=schema)
         except AnalysisException:
             continue
 
@@ -30,7 +32,7 @@ def convert_txt_to_parquet(spark):
 
         df = df.repartition(100, "filename")  # 100 partitions based on file name.  Note that this is actually a maximum of 100 partitions.  If there are <100 file names, there'll be a file per file name.
 
-        df.write.parquet("s3a://alpha-everyone/deleteathenaout/abpparquet/{}".format(v["tablename"]), mode="overwrite")
+        df.write.parquet("{}/abpparquet/{}".format(CSV_BASE_FOLDER_S3A, v["tablename"]), mode="overwrite")
 
 
 
@@ -50,4 +52,4 @@ def get_classification_schema_and_write_to_parquet(spark):
     schema = StructType.fromJson(jsonschema)
 
     look = spark.read.csv("file://{}/lookup.csv".format(os.getcwd()), encoding="latin1", header=True, schema=schema)
-    look.write.parquet("s3a://alpha-everyone/deleteathenaout/abpparquet/abp_classification_scheme")
+    look.write.parquet("{}/abp_classification_scheme".format(PARQUET_BASE_FOLDER_S3A))

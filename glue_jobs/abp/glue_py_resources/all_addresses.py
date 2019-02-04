@@ -1,6 +1,7 @@
 import json
 from pyspark.sql.utils import AnalysisException
 
+from settings import PARQUET_BASE_FOLDER_S3A
 
 def create_views_on_parquet(spark):
 
@@ -9,7 +10,7 @@ def create_views_on_parquet(spark):
 
     for k,v in table_names.items():
         try:
-            df = spark.read.parquet("s3a://alpha-everyone/deleteathenaout/abpparquet/{}".format(v["tablename"]))
+            df = spark.read.parquet("{}/{}".format(PARQUET_BASE_FOLDER_S3A, v["tablename"]))
         except AnalysisException:
             continue
 
@@ -143,4 +144,4 @@ def create_all_addresses(spark):
     geog = geographic_addresses(spark)
     deliv = delivery_addresses(spark)
     all_addresses = geog.union(deliv)
-    all_addresses.write.parquet("s3a://alpha-everyone/deleteathenaout/abpparquet/abp_all_addresses", mode="overwrite")
+    all_addresses.write.parquet("{}/abp_all_addresses".format(PARQUET_BASE_FOLDER_S3A), mode="overwrite")

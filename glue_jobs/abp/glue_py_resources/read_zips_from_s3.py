@@ -2,18 +2,14 @@ import boto3
 import io
 import zipfile
 
+from settings import ZIP_BUCKET, ZIP_FOLDER
+
 def s3_path_to_bucket_key(path):
     path = path.replace("s3://", "")
     bucket, key = path.split('/', 1)
     return bucket, key
 
 def s3_path_to_bytes_io(path):
-    """
-    Example usage:
-    bytes_io = s3_path_to_bytes_io("s3://bucket/file.csv")
-    for line in bytes_io.readlines():
-        print(line.decode("utf-8"))
-    """
     s3_client = boto3.client('s3')
     bucket, key = s3_path_to_bucket_key(path)
     obj = s3_client.get_object(Bucket=bucket, Key=key)
@@ -35,7 +31,7 @@ def get_file_list_from_bucket(bucket, bucket_folder):
     return files_list
 
 def zip_extract(x):
-    in_memory_data = s3_path_to_bytes_io("s3://{}/{}".format("alpha-everyone", x))
+    in_memory_data = s3_path_to_bytes_io("s3://{}/{}".format(ZIP_BUCKET, x))
     file_obj = zipfile.ZipFile(in_memory_data, "r")
     contents = file_obj.filelist[0]  #assume there is just one file.  Check it's a csv else error
     if '.csv' not in contents.filename:
@@ -51,7 +47,7 @@ def join_lines_file(x):
 
 def get_zip_data_from_s3(spark_context):
 
-    file_list = get_file_list_from_bucket("alpha-everyone", "deleteathenaout/abpzips_glue/")
+    file_list = get_file_list_from_bucket(ZIP_BUCKET, "{}/".format(ZIP_FOLDER))
 
     # As I understand it, if we set num slices >= num cpus in the cluster, we will parallelise across all cpus.
     files_rdd = spark_context.parallelize(file_list, numSlices=100)

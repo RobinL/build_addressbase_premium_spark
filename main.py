@@ -1,9 +1,8 @@
 from python_scripts.abp_links_from_html import abp_links_to_json
-# from python_scripts.parallel_download import download_abp_zips
+from glue_jobs.abp.glue_py_resources.settings import CONTROL_FILES_BASE_FOLDER_S3
 
 # Extract the download links and put them in s3
-
-s3_location = "s3://alpha-everyone/addressbase_premium/html/os_download_links_page.htm"
+s3_location = "{}/os_download_links_page.htm".format(CONTROL_FILES_BASE_FOLDER_S3)
 abp_links_to_json(s3_location)
 
 from etl_manager.etl import GlueJob
