@@ -1,6 +1,7 @@
 # Will want to execute this in docker so we don't have to include BeautifulSoup in Spark.
 from bs4 import BeautifulSoup
 from dataengineeringutils.s3 import s3_path_to_bytes_io, upload_file_to_s3_from_path
+from glue_jobs.abp.glue_py_resources.settings import PROCESS_SUBSET
 import json
 
 def get_abp_links(soup):
@@ -17,6 +18,9 @@ def get_abp_links(soup):
             if "AB76DL" in a["href"]:  # This is a bit of trial and error, but it turned out that the download links all contain "AB76DL" as part of the URL
                 my_links.add(a["href"])
     my_links = list(my_links)
+
+    if PROCESS_SUBSET:
+        my_links = my_links[:PROCESS_SUBSET]
 
     # Check we've found the right number of links
     if (len(my_links) != numfiles):
